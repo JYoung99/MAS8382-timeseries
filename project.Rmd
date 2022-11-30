@@ -1,0 +1,25 @@
+---
+title: "Project"
+author: "Jack Young"
+date: '2022-11-30'
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+## Read in project data file
+filename = "projectdata.txt"
+data = read.table(filename, header=FALSE)
+## Extract the data according to your reference number
+y = data[,13]
+```
+
+
+
+
+
